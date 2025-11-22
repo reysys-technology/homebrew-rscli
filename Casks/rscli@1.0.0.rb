@@ -35,5 +35,11 @@ cask "rscli@1.0.0" do
     end
   end
 
+  postflight do
+    if OS.mac?
+      system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}"]
+    end
+  end
+
   # No zap stanza required
 end
