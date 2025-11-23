@@ -3,7 +3,7 @@ cask "rscli" do
   name "rscli"
   desc "Reysys CLI"
   homepage "https://github.com/reysys-technology/rscli"
-  version "1.0.1"
+  version "1.0.2"
 
   livecheck do
     skip "Auto-generated on release."
@@ -11,26 +11,26 @@ cask "rscli" do
 
   on_macos do
     on_intel do
-      url "https://github.com/reysys-technology/rscli/releases/download/v1.0.1/rscli_darwin_amd64"
-      sha256 "49735cd7f5b54d5a19339e45c9b44e702afd086b6f6701c3b93ec1c41d64d998"
+      url "https://github.com/reysys-technology/rscli/releases/download/v#{version}/rscli_darwin_amd64"
+      sha256 "e69c28735e7bcd603176f0e199e88e13092b2f6bffacecbfa3310634bef654c7"
       binary "rscli_darwin_amd64", target: "rscli"
     end
     on_arm do
-      url "https://github.com/reysys-technology/rscli/releases/download/v1.0.1/rscli_darwin_arm64"
-      sha256 "1326b68d7a3d814aa70221ed9423aee138225edf58a9085645626ac255064cc9"
+      url "https://github.com/reysys-technology/rscli/releases/download/v#{version}/rscli_darwin_arm64"
+      sha256 "c60e4a1a597841028a18d73f65efe5d153f6cd679cc871e1f926c7f9e5738677"
       binary "rscli_darwin_arm64", target: "rscli"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/reysys-technology/rscli/releases/download/v1.0.1/rscli_linux_amd64"
-      sha256 "3398fa51008e2a798d76a220a5683990bb578225044d6b4ac13db1cc56db4f6b"
+      url "https://github.com/reysys-technology/rscli/releases/download/v#{version}/rscli_linux_amd64"
+      sha256 "856702e9474373f5b2416110f4a5296b7e83ae1b6f8faa2ee6e2fa8d81e28ba4"
       binary "rscli_linux_amd64", target: "rscli"
     end
     on_arm do
-      url "https://github.com/reysys-technology/rscli/releases/download/v1.0.1/rscli_linux_arm64"
-      sha256 "58280e81e68ff5fec7d3ff12557655b9d97b392859879626db56d7dfd9c8baee"
+      url "https://github.com/reysys-technology/rscli/releases/download/v#{version}/rscli_linux_arm64"
+      sha256 "7c9b085ff36c1f4f56bd0c414d6edb6d0fac1a64fc63beb35bf36d4118f7fd30"
       binary "rscli_linux_arm64", target: "rscli"
     end
   end
